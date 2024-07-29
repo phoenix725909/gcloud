@@ -50,9 +50,4 @@ variable "domain" {
 	type = string
 	default = "dragon"
 	}
-
-variable "application" {
-	type = string
-	}
-
 	
