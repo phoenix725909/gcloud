@@ -2,7 +2,7 @@ resource "google_compute_instance" "default" {
   name         		= var.friendly_name
   machine_type 		= var.machine.type
   zone         		= var.zone
-  tags 		   		= var.tags
+  tags 		   	= var.tags
   hostname     		=join(".", ["${var.friendly_name}", "${var.domain}"])
   description  		=var.description
   desired_status 	= var.machine_state
