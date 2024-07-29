@@ -3,8 +3,8 @@ resource "google_compute_instance" "default" {
   machine_type 		= var.machine.type
   zone         		= var.zone
   tags 		   	= var.tags
-  hostname     		=join(".", ["${var.friendly_name}", "${var.domain}"])
-  description  		=var.description
+  hostname     		= join(".", ["${var.friendly_name}", "${var.domain}"])
+  description  		= var.description
   desired_status 	= var.machine_state
   labels			= {
 	environment		= var.environment
@@ -14,7 +14,7 @@ resource "google_compute_instance" "default" {
 
 
   boot_disk {
-	device_name		="${var.friendly_name}-boot
+	device_name		= "${var.friendly_name}-boot
     initialize_params {
       image = "debian-cloud/debian-11"
     }
