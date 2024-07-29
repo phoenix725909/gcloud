@@ -9,7 +9,7 @@ variable "application" {
 variable "friendly_name" {
 	type = string
 	validation {
-	condition = length(va.friendly_name) < 16
+	condition = length(var.friendly_name) < 16
 	error_message = "The hostname must be 15 characters or less"
 	}
 	}
