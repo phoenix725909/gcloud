@@ -1,4 +1,4 @@
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "compute_instance" {
   name         		= var.friendly_name
   machine_type 		= var.machine.type
   zone         		= var.zone
