@@ -1,7 +1,6 @@
 resource "google_compute_instance" "compute_instance" {
   name           = var.friendly_name
   machine_type   = var.machine.type
-  zone           = var.zone
   tags           = var.tags
   hostname       = join(".", ["${var.friendly_name}", "${var.domain}"])
   description    = var.description
