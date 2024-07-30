@@ -29,7 +29,7 @@ variable "environment" {
 	type = list(string)
 	
 	validation{
-	condition= can(contains(["prod", "dr", "dev", "test"], var.environment))
+	condition = can(contains(["prod", "dr", "dev", "test"], var.environment))
 	error_message = "You may use: prod, dr, dev, test."
 	}
 	}
