@@ -26,7 +26,7 @@ variable "tags" {
 	}
 
 variable "environment" {
-	type = list(string)
+	type = string
 	
 	validation{
 	condition = can(contains(["prod", "dr", "dev", "test"], var.environment))
