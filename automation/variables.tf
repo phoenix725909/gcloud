@@ -19,9 +19,6 @@ variable "machine_type" {
 	default = "n1-standard-2"
 	}
 
-variable "zone" {
-	type = string
-	}
 
 variable "tags" {
 	type = list(string)
